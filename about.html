@@ -1,773 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับฉัน | Rattanaphorn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<body>
 
-body {
-    font-family: 'Kanit', sans-serif;
-    color: #5f5668;
-}
+    <nav class="navbar">
+        <div class="logo">🎀 RATTANAPHORN</div>
 
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="about.html" class="active">เกี่ยวกับฉัน</a></li>
+            <li><a href="education.html">การศึกษา</a></li>
+            <li><a href="portfolio.html">ผลงาน</a></li>
+            <li><a href="contact.html">ติดต่อ</a></li>
+        </ul>
+    </nav>
 
-/* =====================
-        เมนู
-===================== */
 
-nav {
-    background: rgba(255, 255, 255, 0.85);
+    <section class="page-header">
+        <div class="emoji">🎀 🐱 🎀</div>
+        <h1>ABOUT ME</h1>
+        <p>มาทำความรู้จักกับฉันให้มากขึ้นกันเถอะ 💗</p>
+    </section>
 
-    padding: 20px 8%;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    <main class="about-container">
 
-    box-shadow: 0 4px 20px rgba(150, 120, 170, 0.08);
+        <section class="about-profile card">
 
-    backdrop-filter: blur(10px);
-}
+            <div class="about-image">
+                <img src="profile.jpg" alt="รูปของฉัน">
+            </div>
 
-.logo {
-    font-size: 22px;
-    font-weight: 700;
-    color: #a98acb;
-}
+            <div class="about-text">
 
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 28px;
-}
+                <span class="hello-tag">🎀 HELLO!</span>
 
-nav ul li a {
-    text-decoration: none;
-    color: #6b6173;
-    font-size: 16px;
-    transition: 0.3s;
-}
+                <h2>Hello, I'm Rattanaphorn 🩷</h2>
 
-nav ul li a:hover {
-    color: #e6a6c2;
-}
+                <p>
+                    สวัสดีค่ะ! ฉันชื่อรัตนาภรณ์ ปัจจุบันกำลังศึกษาอยู่
+                    ในระดับชั้นมัธยมศึกษาปีที่ 6
+                    ฉันเป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                    และสนใจการพัฒนาตัวเองอยู่เสมอ ✨
+                </p>
 
+                <div class="tags">
+                    <span class="tag">👩 รัตนาภรณ์</span>
+                    <span class="tag">🎓 ม.6</span>
+                    <span class="tag">🇹🇭 Thailand</span>
+                </div>
 
-/* =====================
-       พื้นหลังหน้าแรก
-===================== */
+            </div>
 
-.background,
-.page-background {
+        </section>
 
-    min-height: 100vh;
 
-    padding: 70px 20px;
+        <h2 class="section-title">💗 สิ่งที่ฉันชอบ 💗</h2>
 
-    background:
+        <section class="favorite-grid">
 
-    radial-gradient(
-        circle at top left,
-        #fff1b8,
-        transparent 35%
-    ),
+            <div class="favorite-card card">
+                <div class="big-icon">📚</div>
+                <h3>การเรียนรู้</h3>
+                <p>ชอบเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ</p>
+            </div>
 
-    radial-gradient(
-        circle at top right,
-        #f8c8dc,
-        transparent 35%
-    ),
+            <div class="favorite-card card">
+                <div class="big-icon">🗣️</div>
+                <h3>ภาษา</h3>
+                <p>สนใจภาษาและการสื่อสาร</p>
+            </div>
 
-    radial-gradient(
-        circle at bottom center,
-        #dcc6f0,
-        transparent 45%
-    ),
+            <div class="favorite-card card">
+                <div class="big-icon">🎨</div>
+                <h3>ความคิดสร้างสรรค์</h3>
+                <p>ชอบออกแบบและสร้างสรรค์ผลงาน</p>
+            </div>
 
-    linear-gradient(
-        135deg,
-        #fffdf8,
-        #fff8fc,
-        #f7f2ff
-    );
-}
+            <div class="favorite-card card">
+                <div class="big-icon">🌍</div>
+                <h3>โลกกว้าง</h3>
+                <p>ชอบเรียนรู้สิ่งต่าง ๆ รอบตัว</p>
+            </div>
 
+        </section>
 
-/* =====================
-      หน้าแรก
-===================== */
 
-.portfolio-card {
+        <section class="goal-card">
 
-    width: 100%;
-    max-width: 850px;
+            <div class="goal-icon">🎯</div>
 
-    margin: auto;
+            <div>
+                <h2>เป้าหมายของฉัน</h2>
 
-    background: rgba(255, 255, 255, 0.88);
+                <p>
+                    ฉันต้องการพัฒนาความรู้และความสามารถของตัวเอง
+                    เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อ
+                    และก้าวไปสู่อนาคตที่ฉันตั้งใจไว้ ✨
+                </p>
+            </div>
 
-    border-radius: 45px;
+        </section>
 
-    padding: 55px 45px;
 
-    text-align: center;
+        <section class="motto-card card">
 
-    box-shadow:
-    0 20px 60px rgba(150, 120, 170, 0.15);
+            <div class="big-icon">💕</div>
 
-    border: 2px solid white;
-}
+            <h2>My Motto</h2>
 
+            <p class="quote">
+                “Believe in yourself and never stop learning.”
+            </p>
 
-/* =====================
-       รูปโปรไฟล์
-===================== */
+            <h3>
+                ✨ เชื่อมั่นในตัวเอง และอย่าหยุดเรียนรู้ ✨
+            </h3>
 
-.profile-box {
+        </section>
 
-    width: 210px;
-    height: 210px;
 
-    margin: 0 auto 30px;
+        <div class="next-page">
+            <a href="education.html" class="btn">
+                ไปดูการศึกษาของฉัน 🎓 →
+            </a>
+        </div>
 
-    padding: 8px;
+    </main>
 
-    border-radius: 50%;
 
-    background:
+    <footer>
+        <p>🎀 Made with love by Rattanaphorn 🩷</p>
+    </footer>
 
-    linear-gradient(
-        135deg,
-        #dcc6f0,
-        #f8c8dc,
-        #fff1b8
-    );
-
-    box-shadow:
-    0 15px 35px rgba(180, 140, 190, 0.2);
-}
-
-.profile-box img {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    border: 5px solid white;
-}
-
-
-/* =====================
-         ข้อความ
-===================== */
-
-h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
-    color: #75637f;
-}
-
-h1 span {
-
-    background:
-
-    linear-gradient(
-        90deg,
-        #b99ad8,
-        #e6a6c2,
-        #e8c96a
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-h2 {
-    color: #9b82ae;
-}
-
-p {
-    color: #756d7c;
-}
-
-
-/* =====================
-          ปุ่ม
-===================== */
-
-.buttons {
-
-    display: flex;
-    justify-content: center;
-
-    gap: 15px;
-
-    margin-bottom: 45px;
-}
-
-.btn {
-
-    display: inline-block;
-
-    text-decoration: none;
-
-    padding: 14px 30px;
-
-    border-radius: 30px;
-
-    color: #66556f;
-
-    font-size: 17px;
-
-    font-weight: 500;
-
-    background:
-
-    linear-gradient(
-        135deg,
-        #dcc6f0,
-        #f8c8dc
-    );
-
-    transition: 0.3s;
-
-    box-shadow:
-    0 8px 20px rgba(180, 140, 190, 0.18);
-}
-
-.btn:hover {
-
-    transform: translateY(-5px);
-
-    box-shadow:
-    0 15px 30px rgba(180, 140, 190, 0.25);
-}
-
-
-/* ปุ่มที่สอง */
-
-.second-btn {
-
-    background:
-
-    linear-gradient(
-        135deg,
-        #fff1b8,
-        #f8c8dc
-    );
-}
-
-
-/* =====================
-      หัวข้อหน้า
-===================== */
-
-.page-container {
-
-    max-width: 1100px;
-    margin: auto;
-}
-
-.page-title {
-
-    text-align: center;
-
-    margin-bottom: 55px;
-}
-
-.page-title span {
-
-    font-size: 50px;
-}
-
-.page-title h1 {
-
-    margin-top: 10px;
-}
-
-.page-title p {
-
-    font-size: 18px;
-}
-
-
-/* =====================
-          ABOUT
-===================== */
-
-.about-grid {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1.5fr;
-
-    gap: 45px;
-
-    align-items: center;
-
-    background: rgba(255,255,255,0.88);
-
-    padding: 45px;
-
-    border-radius: 40px;
-
-    box-shadow:
-    0 20px 50px rgba(150,120,170,0.12);
-}
-
-
-/* รูปหน้า About */
-
-.about-image {
-
-    width: 100%;
-
-    max-width: 350px;
-
-    margin: auto;
-
-    padding: 8px;
-
-    border-radius: 35px;
-
-    background:
-
-    linear-gradient(
-        135deg,
-        #dcc6f0,
-        #f8c8dc,
-        #fff1b8
-    );
-}
-
-.about-image img {
-
-    width: 100%;
-
-    display: block;
-
-    border-radius: 28px;
-}
-
-
-/* ข้อมูล About */
-
-.about-info h2 {
-
-    font-size: 30px;
-}
-
-.about-info p {
-
-    font-size: 17px;
-
-    line-height: 1.8;
-
-    margin-bottom: 15px;
-}
-
-
-.info-list {
-
-    margin: 25px 0;
-}
-
-.info-item {
-
-    background:
-
-    linear-gradient(
-        90deg,
-        #f4edfb,
-        #fff0f6
-    );
-
-    padding: 15px 20px;
-
-    border-radius: 18px;
-
-    margin-bottom: 12px;
-
-    color: #7b6b85;
-}
-
-.info-item span {
-
-    display: block;
-
-    color: #a98acb;
-
-    margin-top: 5px;
-}
-
-
-/* สิ่งที่สนใจ */
-
-.section-heading {
-
-    text-align: center;
-
-    margin: 70px 0 30px;
-}
-
-.interest-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 25px;
-}
-
-.interest-card {
-
-    background: rgba(255,255,255,0.9);
-
-    padding: 35px 25px;
-
-    border-radius: 30px;
-
-    text-align: center;
-
-    transition: 0.3s;
-
-    box-shadow:
-    0 10px 30px rgba(150,120,170,0.1);
-}
-
-.interest-card:hover {
-
-    transform: translateY(-10px);
-}
-
-.emoji {
-
-    font-size: 42px;
-
-    margin-bottom: 12px;
-}
-
-.interest-card h3 {
-
-    color: #a98acb;
-
-    margin-bottom: 10px;
-}
-
-
-/* =====================
-        EDUCATION
-===================== */
-
-.timeline {
-
-    max-width: 850px;
-
-    margin: auto;
-}
-
-.education-card {
-
-    display: flex;
-
-    gap: 25px;
-
-    align-items: center;
-
-    background: rgba(255,255,255,0.9);
-
-    padding: 30px;
-
-    border-radius: 30px;
-
-    margin-bottom: 25px;
-
-    box-shadow:
-    0 10px 30px rgba(150,120,170,0.1);
-
-    transition: 0.3s;
-}
-
-.education-card:hover {
-
-    transform: translateX(10px);
-}
-
-.education-icon {
-
-    font-size: 45px;
-
-    width: 90px;
-    height: 90px;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 25px;
-
-    background:
-
-    linear-gradient(
-        135deg,
-        #dcc6f0,
-        #f8c8dc,
-        #fff1b8
-    );
-}
-
-.year {
-
-    color: #d89ab8;
-
-    font-weight: 600;
-}
-
-.education-content h3 {
-
-    color: #a98acb;
-
-    margin-bottom: 8px;
-}
-
-
-/* เป้าหมาย */
-
-.goal-card {
-
-    text-align: center;
-
-    max-width: 750px;
-
-    margin: 60px auto 0;
-
-    padding: 45px;
-
-    background:
-
-    linear-gradient(
-        135deg,
-        #e5d5f5,
-        #f9d6e5,
-        #fff1b8
-    );
-
-    border-radius: 40px;
-
-    box-shadow:
-    0 20px 50px rgba(150,120,170,0.15);
-}
-
-.goal-icon {
-
-    font-size: 50px;
-}
-
-.goal-card h2 {
-
-    margin: 15px;
-
-    color: #806b8d;
-}
-
-.goal-card p {
-
-    font-size: 17px;
-
-    line-height: 1.8;
-
-    margin-bottom: 25px;
-}
-
-
-/* =====================
-         PORTFOLIO
-===================== */
-
-.portfolio-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 30px;
-}
-
-.work-card {
-
-    background: rgba(255,255,255,0.92);
-
-    border-radius: 30px;
-
-    overflow: hidden;
-
-    box-shadow:
-    0 15px 40px rgba(150,120,170,0.12);
-
-    transition: 0.3s;
-}
-
-.work-card:hover {
-
-    transform: translateY(-12px);
-}
-
-.work-image {
-
-    height: 250px;
-
-    overflow: hidden;
-
-    background:
-
-    linear-gradient(
-        135deg,
-        #f3eafa,
-        #fde7f0,
-        #fff5ca
-    );
-}
-
-.work-image img {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: 0.5s;
-}
-
-.work-card:hover img {
-
-    transform: scale(1.08);
-}
-
-.work-info {
-
-    padding: 25px;
-}
-
-.work-info h2 {
-
-    margin: 12px 0;
-}
-
-
-/* ป้าย */
-
-.tag {
-
-    display: inline-block;
-
-    padding: 6px 15px;
-
-    border-radius: 20px;
-
-    color: #67576f;
-
-    font-size: 14px;
-}
-
-.purple {
-
-    background: #e5d5f5;
-}
-
-.pink {
-
-    background: #f9d6e5;
-}
-
-.yellow {
-
-    background: #fff1b8;
-}
-
-
-/* =====================
-         Footer
-===================== */
-
-footer {
-
-    text-align: center;
-
-    padding: 25px;
-
-    color: #75637f;
-
-    background:
-
-    linear-gradient(
-        90deg,
-        #e5d5f5,
-        #f9d6e5,
-        #fff1b8
-    );
-}
-
-
-/* =====================
-        มือถือ
-===================== */
-
-@media (max-width: 750px) {
-
-    nav {
-
-        flex-direction: column;
-
-        gap: 15px;
-    }
-
-    nav ul {
-
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        gap: 15px;
-    }
-
-    .about-grid {
-
-        grid-template-columns: 1fr;
-
-        padding: 30px 20px;
-    }
-
-    .interest-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-    .portfolio-grid {
-
-        grid-template-columns: 1fr;
-    }
-
-    .education-card {
-
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    .page-title h1 {
-
-        font-size: 32px;
-    }
-
-    .profile-box {
-
-        width: 170px;
-        height: 170px;
-    }
-
-}
+</body>
+</html>

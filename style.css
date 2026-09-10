@@ -473,3 +473,509 @@ footer{
     }
 
 }
+/* =========================================
+   HOME PAGE - หน้าแรก
+   ========================================= */
+
+.home-page {
+    min-height: 100vh;
+}
+
+/* ส่วนเนื้อหาหน้าแรก */
+.hero {
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================================
+   PROFILE
+   ========================================= */
+
+.profile-wrapper {
+    position: relative;
+
+    width: 210px;
+    height: 210px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-glow {
+    position: absolute;
+
+    width: 210px;
+    height: 210px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #ffd1e4,
+        #e5d5ff,
+        #fff0aa
+    );
+
+    filter: blur(15px);
+
+    opacity: 0.7;
+
+    animation: profileGlow 3s ease-in-out infinite;
+}
+
+.profile {
+    position: relative;
+
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #ffd5e8,
+        #e6d8ff,
+        #fff1b5
+    );
+
+    border: 6px solid white;
+
+    box-shadow:
+        0 15px 35px rgba(180,130,190,0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2;
+
+    transition: 0.4s;
+}
+
+.profile:hover {
+    transform: translateY(-10px) scale(1.05) rotate(2deg);
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.profile-emoji {
+    position: absolute;
+
+    font-size: 80px;
+
+    z-index: -1;
+}
+
+@keyframes profileGlow {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+/* =========================================
+   CUTE ICONS
+   ========================================= */
+
+.cute-icons {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 5px 0 10px;
+
+    font-size: 25px;
+}
+
+.cute-icons span {
+    display: inline-block;
+
+    animation: iconBounce 2s ease-in-out infinite;
+}
+
+.cute-icons span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.cute-icons span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.cute-icons span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.cute-icons span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes iconBounce {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* =========================================
+   WELCOME TEXT
+   ========================================= */
+
+.welcome-text {
+    font-size: 18px;
+
+    color: #a27bb5;
+
+    font-weight: 500;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+}
+
+/* =========================================
+   HOME TITLE
+   ========================================= */
+
+.hero h1 {
+    font-size: 48px;
+
+    color: #6d617e;
+
+    margin: 5px 0;
+
+    animation: titleFloat 3s ease-in-out infinite;
+}
+
+.hero h2 {
+    font-size: 30px;
+
+    color: #9672a2;
+
+    margin-bottom: 10px;
+}
+
+.wave {
+    display: inline-block;
+
+    animation: waveHand 1.8s ease-in-out infinite;
+}
+
+@keyframes waveHand {
+    0%,100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(15deg);
+    }
+}
+
+/* =========================================
+   INTRO
+   ========================================= */
+
+.intro {
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    color: #71677e;
+
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+.button-group {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    margin-top: 10px;
+}
+
+.cute-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 13px 25px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #665a70;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 25px rgba(190,140,190,0.25);
+
+    transition: 0.3s;
+
+    min-width: 170px;
+}
+
+.purple-btn {
+    background: linear-gradient(
+        90deg,
+        #e5d5ff,
+        #f3eaff
+    );
+}
+
+.yellow-btn {
+    background: linear-gradient(
+        90deg,
+        #fff0aa,
+        #fff7d4
+    );
+}
+
+.cute-btn:hover {
+    transform: translateY(-7px) scale(1.05);
+
+    box-shadow:
+        0 18px 35px rgba(190,140,190,0.35);
+}
+
+.cute-btn b {
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.cute-btn:hover b {
+    transform: translateX(5px);
+}
+
+/* =========================================
+   MINI INFO
+   ========================================= */
+
+.mini-info {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+.info-card {
+    min-width: 130px;
+
+    padding: 15px 20px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.75);
+
+    border: 2px solid rgba(255,255,255,0.9);
+
+    box-shadow:
+        0 10px 25px rgba(180,130,190,0.15);
+
+    transition: 0.4s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px) rotate(2deg);
+
+    box-shadow:
+        0 18px 30px rgba(180,130,190,0.25);
+}
+
+.info-card span {
+    font-size: 25px;
+}
+
+.info-card p {
+    margin-top: 5px;
+
+    font-size: 15px;
+}
+
+/* =========================================
+   FLOATING EMOJI
+   ========================================= */
+
+.float-item {
+    position: fixed;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    animation: floatingEmoji 5s ease-in-out infinite;
+}
+
+.item1 {
+    top: 18%;
+    left: 6%;
+    font-size: 35px;
+}
+
+.item2 {
+    top: 30%;
+    right: 7%;
+    font-size: 40px;
+
+    animation-delay: 1s;
+}
+
+.item3 {
+    top: 55%;
+    left: 4%;
+    font-size: 30px;
+
+    animation-delay: 2s;
+}
+
+.item4 {
+    bottom: 15%;
+    right: 8%;
+    font-size: 35px;
+
+    animation-delay: 3s;
+}
+
+.item5 {
+    bottom: 20%;
+    left: 12%;
+    font-size: 30px;
+
+    animation-delay: 1.5s;
+}
+
+.item6 {
+    top: 45%;
+    right: 15%;
+    font-size: 35px;
+
+    animation-delay: 2.5s;
+}
+
+.item7 {
+    bottom: 8%;
+    left: 5%;
+    font-size: 30px;
+
+    animation-delay: 3.5s;
+}
+
+.item8 {
+    top: 15%;
+    right: 20%;
+    font-size: 28px;
+
+    animation-delay: 1s;
+}
+
+@keyframes floatingEmoji {
+    0%,100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media(max-width:700px) {
+
+    .hero {
+        min-height: auto;
+
+        padding: 50px 15px;
+    }
+
+    .profile-wrapper {
+        width: 170px;
+        height: 170px;
+    }
+
+    .profile-glow {
+        width: 170px;
+        height: 170px;
+    }
+
+    .profile {
+        width: 145px;
+        height: 145px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .float-item {
+        font-size: 25px !important;
+    }
+}

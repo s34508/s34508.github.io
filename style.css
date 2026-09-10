@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Kanit', sans-serif;
-    color: #40304f;
+    color: #5f5668;
 }
 
 
@@ -17,64 +17,95 @@ body {
 ===================== */
 
 nav {
-    background: rgba(255,255,255,0.92);
+    background: rgba(255, 255, 255, 0.85);
+
     padding: 20px 8%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 20px rgba(120,70,150,0.08);
+
+    box-shadow: 0 4px 20px rgba(150, 120, 170, 0.08);
+
+    backdrop-filter: blur(10px);
 }
 
 .logo {
     font-size: 22px;
     font-weight: 700;
-    color: #7b3fc6;
+    color: #a98acb;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 28px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #40304f;
+    color: #6b6173;
     font-size: 16px;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #e85d9b;
+    color: #e6a6c2;
 }
 
 
 /* =====================
-       พื้นหลัง
+       พื้นหลังหน้าแรก
 ===================== */
 
-.background {
+.background,
+.page-background {
+
     min-height: 100vh;
+
     padding: 70px 20px;
 
     background:
-        radial-gradient(circle at top left, #ffd84d, transparent 35%),
-        radial-gradient(circle at top right, #f59ac5, transparent 35%),
-        radial-gradient(circle at bottom center, #a96be8, transparent 45%),
-        linear-gradient(135deg, #fff5c9, #fce1f0, #eadcff);
+
+    radial-gradient(
+        circle at top left,
+        #fff1b8,
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at top right,
+        #f8c8dc,
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at bottom center,
+        #dcc6f0,
+        transparent 45%
+    ),
+
+    linear-gradient(
+        135deg,
+        #fffdf8,
+        #fff8fc,
+        #f7f2ff
+    );
 }
 
 
 /* =====================
-       การ์ดหลัก
+      หน้าแรก
 ===================== */
 
 .portfolio-card {
+
     width: 100%;
     max-width: 850px;
+
     margin: auto;
 
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.88);
 
     border-radius: 45px;
 
@@ -83,9 +114,9 @@ nav ul li a:hover {
     text-align: center;
 
     box-shadow:
-        0 25px 70px rgba(112,60,150,0.22);
+    0 20px 60px rgba(150, 120, 170, 0.15);
 
-    border: 3px solid white;
+    border: 2px solid white;
 }
 
 
@@ -94,6 +125,7 @@ nav ul li a:hover {
 ===================== */
 
 .profile-box {
+
     width: 210px;
     height: 210px;
 
@@ -104,18 +136,20 @@ nav ul li a:hover {
     border-radius: 50%;
 
     background:
-        linear-gradient(
-            135deg,
-            #7b3fc6,
-            #e85d9b,
-            #ffd84d
-        );
+
+    linear-gradient(
+        135deg,
+        #dcc6f0,
+        #f8c8dc,
+        #fff1b8
+    );
 
     box-shadow:
-        0 15px 35px rgba(170,80,180,0.3);
+    0 15px 35px rgba(180, 140, 190, 0.2);
 }
 
 .profile-box img {
+
     width: 100%;
     height: 100%;
 
@@ -134,15 +168,18 @@ nav ul li a:hover {
 h1 {
     font-size: 42px;
     margin-bottom: 15px;
-    color: #56346e;
+    color: #75637f;
 }
 
 h1 span {
-    background: linear-gradient(
+
+    background:
+
+    linear-gradient(
         90deg,
-        #7b3fc6,
-        #e85d9b,
-        #f2b705
+        #b99ad8,
+        #e6a6c2,
+        #e8c96a
     );
 
     -webkit-background-clip: text;
@@ -150,45 +187,11 @@ h1 span {
 }
 
 h2 {
-    font-size: 25px;
-    margin-bottom: 12px;
-    color: #7b3fc6;
+    color: #9b82ae;
 }
 
-.nickname {
-    font-size: 18px;
-    color: #75677e;
-    margin-bottom: 30px;
-}
-
-
-/* =====================
-       กล่องข้อมูล
-===================== */
-
-.intro-box {
-    background:
-        linear-gradient(
-            135deg,
-            #f4e8ff,
-            #ffe4f1,
-            #fff4bd
-        );
-
-    border-radius: 25px;
-
-    padding: 25px;
-
-    max-width: 650px;
-
-    margin: 0 auto 30px;
-
-    border: 2px solid rgba(255,255,255,0.8);
-}
-
-.intro-box p {
-    font-size: 17px;
-    margin: 10px;
+p {
+    color: #756d7c;
 }
 
 
@@ -197,130 +200,516 @@ h2 {
 ===================== */
 
 .buttons {
+
     display: flex;
     justify-content: center;
+
     gap: 15px;
+
     margin-bottom: 45px;
 }
 
 .btn {
+
+    display: inline-block;
+
     text-decoration: none;
 
     padding: 14px 30px;
 
     border-radius: 30px;
 
-    color: white;
+    color: #66556f;
 
     font-size: 17px;
 
     font-weight: 500;
 
     background:
-        linear-gradient(
-            135deg,
-            #7b3fc6,
-            #b85de5
-        );
+
+    linear-gradient(
+        135deg,
+        #dcc6f0,
+        #f8c8dc
+    );
 
     transition: 0.3s;
 
     box-shadow:
-        0 8px 20px rgba(123,63,198,0.25);
+    0 8px 20px rgba(180, 140, 190, 0.18);
 }
 
 .btn:hover {
+
     transform: translateY(-5px);
+
+    box-shadow:
+    0 15px 30px rgba(180, 140, 190, 0.25);
 }
 
 
-/* ปุ่มผลงาน */
+/* ปุ่มที่สอง */
 
 .second-btn {
+
     background:
-        linear-gradient(
-            135deg,
-            #e85d9b,
-            #f2b705
-        );
+
+    linear-gradient(
+        135deg,
+        #fff1b8,
+        #f8c8dc
+    );
 }
 
 
 /* =====================
-       การ์ดเมนู
+      หัวข้อหน้า
 ===================== */
 
-.menu-cards {
-    display: grid;
+.page-container {
 
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.mini-card {
-    text-decoration: none;
+.page-title {
 
-    color: #40304f;
+    text-align: center;
 
-    padding: 30px 15px;
+    margin-bottom: 55px;
+}
 
-    background: white;
+.page-title span {
 
-    border-radius: 25px;
+    font-size: 50px;
+}
+
+.page-title h1 {
+
+    margin-top: 10px;
+}
+
+.page-title p {
+
+    font-size: 18px;
+}
+
+
+/* =====================
+          ABOUT
+===================== */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.5fr;
+
+    gap: 45px;
+
+    align-items: center;
+
+    background: rgba(255,255,255,0.88);
+
+    padding: 45px;
+
+    border-radius: 40px;
 
     box-shadow:
-        0 10px 30px rgba(100,60,130,0.1);
+    0 20px 50px rgba(150,120,170,0.12);
+}
+
+
+/* รูปหน้า About */
+
+.about-image {
+
+    width: 100%;
+
+    max-width: 350px;
+
+    margin: auto;
+
+    padding: 8px;
+
+    border-radius: 35px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #dcc6f0,
+        #f8c8dc,
+        #fff1b8
+    );
+}
+
+.about-image img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 28px;
+}
+
+
+/* ข้อมูล About */
+
+.about-info h2 {
+
+    font-size: 30px;
+}
+
+.about-info p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.info-list {
+
+    margin: 25px 0;
+}
+
+.info-item {
+
+    background:
+
+    linear-gradient(
+        90deg,
+        #f4edfb,
+        #fff0f6
+    );
+
+    padding: 15px 20px;
+
+    border-radius: 18px;
+
+    margin-bottom: 12px;
+
+    color: #7b6b85;
+}
+
+.info-item span {
+
+    display: block;
+
+    color: #a98acb;
+
+    margin-top: 5px;
+}
+
+
+/* สิ่งที่สนใจ */
+
+.section-heading {
+
+    text-align: center;
+
+    margin: 70px 0 30px;
+}
+
+.interest-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.interest-card {
+
+    background: rgba(255,255,255,0.9);
+
+    padding: 35px 25px;
+
+    border-radius: 30px;
+
+    text-align: center;
 
     transition: 0.3s;
 
-    border: 2px solid transparent;
+    box-shadow:
+    0 10px 30px rgba(150,120,170,0.1);
 }
 
-.mini-card:hover {
+.interest-card:hover {
+
     transform: translateY(-10px);
-
-    border-color: #e85d9b;
-
-    box-shadow:
-        0 20px 40px rgba(180,80,160,0.2);
 }
 
 .emoji {
+
     font-size: 42px;
+
     margin-bottom: 12px;
 }
 
-.mini-card h3 {
-    color: #7b3fc6;
-    font-size: 20px;
-}
+.interest-card h3 {
 
-.mini-card p {
-    color: #8a7d91;
-    margin-top: 6px;
+    color: #a98acb;
+
+    margin-bottom: 10px;
 }
 
 
 /* =====================
-        Footer
+        EDUCATION
+===================== */
+
+.timeline {
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.education-card {
+
+    display: flex;
+
+    gap: 25px;
+
+    align-items: center;
+
+    background: rgba(255,255,255,0.9);
+
+    padding: 30px;
+
+    border-radius: 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+    0 10px 30px rgba(150,120,170,0.1);
+
+    transition: 0.3s;
+}
+
+.education-card:hover {
+
+    transform: translateX(10px);
+}
+
+.education-icon {
+
+    font-size: 45px;
+
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 25px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #dcc6f0,
+        #f8c8dc,
+        #fff1b8
+    );
+}
+
+.year {
+
+    color: #d89ab8;
+
+    font-weight: 600;
+}
+
+.education-content h3 {
+
+    color: #a98acb;
+
+    margin-bottom: 8px;
+}
+
+
+/* เป้าหมาย */
+
+.goal-card {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 60px auto 0;
+
+    padding: 45px;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #e5d5f5,
+        #f9d6e5,
+        #fff1b8
+    );
+
+    border-radius: 40px;
+
+    box-shadow:
+    0 20px 50px rgba(150,120,170,0.15);
+}
+
+.goal-icon {
+
+    font-size: 50px;
+}
+
+.goal-card h2 {
+
+    margin: 15px;
+
+    color: #806b8d;
+}
+
+.goal-card p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================
+         PORTFOLIO
+===================== */
+
+.portfolio-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.work-card {
+
+    background: rgba(255,255,255,0.92);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    box-shadow:
+    0 15px 40px rgba(150,120,170,0.12);
+
+    transition: 0.3s;
+}
+
+.work-card:hover {
+
+    transform: translateY(-12px);
+}
+
+.work-image {
+
+    height: 250px;
+
+    overflow: hidden;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #f3eafa,
+        #fde7f0,
+        #fff5ca
+    );
+}
+
+.work-image img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.work-card:hover img {
+
+    transform: scale(1.08);
+}
+
+.work-info {
+
+    padding: 25px;
+}
+
+.work-info h2 {
+
+    margin: 12px 0;
+}
+
+
+/* ป้าย */
+
+.tag {
+
+    display: inline-block;
+
+    padding: 6px 15px;
+
+    border-radius: 20px;
+
+    color: #67576f;
+
+    font-size: 14px;
+}
+
+.purple {
+
+    background: #e5d5f5;
+}
+
+.pink {
+
+    background: #f9d6e5;
+}
+
+.yellow {
+
+    background: #fff1b8;
+}
+
+
+/* =====================
+         Footer
 ===================== */
 
 footer {
+
     text-align: center;
 
     padding: 25px;
 
-    color: white;
+    color: #75637f;
 
     background:
-        linear-gradient(
-            90deg,
-            #6d35b5,
-            #d94d91,
-            #f2b705
-        );
+
+    linear-gradient(
+        90deg,
+        #e5d5f5,
+        #f9d6e5,
+        #fff1b8
+    );
 }
 
 
@@ -331,36 +720,54 @@ footer {
 @media (max-width: 750px) {
 
     nav {
+
         flex-direction: column;
+
         gap: 15px;
     }
 
     nav ul {
+
         flex-wrap: wrap;
+
         justify-content: center;
+
         gap: 15px;
     }
 
-    .portfolio-card {
-        padding: 40px 20px;
-        border-radius: 30px;
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+        padding: 30px 20px;
     }
 
-    h1 {
-        font-size: 30px;
+    .interest-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .education-card {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .page-title h1 {
+
+        font-size: 32px;
     }
 
     .profile-box {
+
         width: 170px;
         height: 170px;
     }
 
-    .menu-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
 }

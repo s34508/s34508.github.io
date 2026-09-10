@@ -8,8 +8,8 @@
     <title>Rattanaphorn Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
+
 
 <body>
 
@@ -21,7 +21,7 @@
         </div>
 
         <ul>
-            <li><a class="active" href="index.html">หน้าแรก</a></li>
+            <li><a href="index.html">หน้าแรก</a></li>
             <li><a href="about.html">เกี่ยวกับฉัน</a></li>
             <li><a href="education.html">การศึกษา</a></li>
             <li><a href="portfolio.html">ผลงาน</a></li>
@@ -31,86 +31,120 @@
     </nav>
 
 
-    <!-- หน้าแรก -->
-    <section class="hero">
+    <!-- พื้นหลัง -->
+    <main class="background">
 
-        <div class="hero-text">
+        <!-- การ์ด Portfolio -->
+        <div class="portfolio-card">
 
-            <p class="hello">👋 HELLO, I'M</p>
+
+            <!-- รูปโปรไฟล์ -->
+            <div class="profile-box">
+
+                <img src="profile.jpg" alt="รูปโปรไฟล์">
+
+            </div>
+
+
+            <!-- ข้อความต้อนรับ -->
 
             <h1>
-                RATTANAPHORN
-                <span>✦</span>
+                👋 ยินดีต้อนรับสู่
+                <span>Portfolio ของฉัน</span>
+                ✦
             </h1>
 
-            <h2>Portfolio ของฉัน</h2>
 
-            <p class="description">
-                ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของฉัน
-                ที่รวบรวมเรื่องราว ประวัติการศึกษา
-                และผลงานต่าง ๆ ของฉันไว้ที่นี่ 💜
+            <h2>
+                สวัสดีค่ะ ฉันชื่อ Rattanaphorn
+            </h2>
+
+
+            <p class="nickname">
+                🌟 มาทำความรู้จักและดูผลงานของฉันกันนะคะ 🌟
             </p>
 
 
+            <!-- ข้อมูลสั้น ๆ -->
+
+            <div class="intro-box">
+
+                <p>
+                    👩🏻‍🎓 <b>กำลังศึกษา:</b> ระดับชั้นมัธยมศึกษาปีที่ 6
+                </p>
+
+                <p>
+                    💜 <b>ความสนใจ:</b> ภาษา การเรียนรู้ และความคิดสร้างสรรค์
+                </p>
+
+            </div>
+
+
             <!-- ปุ่ม -->
+
             <div class="buttons">
 
                 <a href="about.html" class="btn">
-                    ทำความรู้จักฉัน →
+                    เกี่ยวกับฉัน →
                 </a>
 
-                <a href="portfolio.html" class="btn-outline">
+                <a href="portfolio.html" class="btn second-btn">
                     ดูผลงาน ✦
                 </a>
 
             </div>
 
+
+            <!-- กล่องเมนู -->
+
+            <section class="menu-cards">
+
+                <a href="about.html" class="mini-card">
+
+                    <div class="emoji">👋</div>
+
+                    <h3>ABOUT ME</h3>
+
+                    <p>ทำความรู้จักฉัน</p>
+
+                </a>
+
+
+                <a href="education.html" class="mini-card">
+
+                    <div class="emoji">🎓</div>
+
+                    <h3>EDUCATION</h3>
+
+                    <p>ประวัติการศึกษา</p>
+
+                </a>
+
+
+                <a href="portfolio.html" class="mini-card">
+
+                    <div class="emoji">🏆</div>
+
+                    <h3>PORTFOLIO</h3>
+
+                    <p>ผลงานของฉัน</p>
+
+                </a>
+
+
+            </section>
+
         </div>
 
-
-        <!-- รูปภาพ -->
-        <div class="hero-image">
-
-            <!-- เปลี่ยนชื่อไฟล์รูปตรงนี้ -->
-            <img src="profile.jpg" alt="Rattanaphorn">
-
-        </div>
-
-    </section>
-
-
-    <!-- การ์ดด้านล่าง -->
-    <section class="quick-info">
-
-        <div class="info-card">
-            <div class="icon">👩🏻‍🎓</div>
-            <h3>ABOUT ME</h3>
-            <p>มาทำความรู้จักฉัน</p>
-            <a href="about.html">อ่านเพิ่มเติม →</a>
-        </div>
-
-
-        <div class="info-card">
-            <div class="icon">🎓</div>
-            <h3>EDUCATION</h3>
-            <p>ประวัติการศึกษาของฉัน</p>
-            <a href="education.html">ดูเพิ่มเติม →</a>
-        </div>
-
-
-        <div class="info-card">
-            <div class="icon">🏆</div>
-            <h3>PORTFOLIO</h3>
-            <p>รวมผลงานและกิจกรรม</p>
-            <a href="portfolio.html">ดูผลงาน →</a>
-        </div>
-
-    </section>
+    </main>
 
 
     <footer>
+
         © 2026 Rattanaphorn Portfolio ✦
+
     </footer>
+
 
 </body>
 

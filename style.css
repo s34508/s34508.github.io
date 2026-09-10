@@ -771,3 +771,127 @@ footer {
     }
 
 }
+/* =====================
+   ส่วนเสริมธีม 🎀
+===================== */
+
+.sparkles {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-yellow {
+    background: linear-gradient(135deg, #ffd96b, #ffb8d2);
+}
+
+.cute-icons {
+    margin-top: 35px;
+    font-size: 28px;
+    letter-spacing: 8px;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+/* ABOUT */
+
+.hello-tag {
+    display: inline-block;
+    padding: 7px 18px;
+    border-radius: 30px;
+    background: #ffe2ef;
+    color: #df719c;
+    font-weight: bold;
+}
+
+
+/* ICON */
+
+.big-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+
+/* EDUCATION */
+
+.small-text {
+    margin-top: 10px;
+    color: #9a8b9b;
+}
+
+.dream-card {
+    text-align: center;
+    padding: 40px;
+    margin: 30px 0;
+    border-radius: 35px;
+    background: linear-gradient(
+        135deg,
+        #ffe0ed,
+        #eadcff,
+        #fff2ae
+    );
+    box-shadow: 0 15px 30px rgba(190, 130, 190, 0.15);
+}
+
+.dream-card h2 {
+    color: #df719c;
+    margin-bottom: 12px;
+}
+
+
+/* PORTFOLIO */
+
+.portfolio-message {
+    text-align: center;
+    padding: 45px;
+    margin-top: 45px;
+    border-radius: 35px;
+    background: linear-gradient(
+        135deg,
+        #ffe5ef,
+        #f1e4ff,
+        #fff5c7
+    );
+}
+
+.portfolio-message h2 {
+    color: #df719c;
+    margin-bottom: 10px;
+}
+
+
+/* CONTACT */
+
+.contact-intro {
+    margin-bottom: 25px;
+}
+
+.thank-you {
+    margin: 30px 0;
+    padding: 25px;
+    border-radius: 25px;
+    background: #fff2f7;
+}
+
+.thank-you h2 {
+    margin-top: 15px;
+}
+
+
+/* เอฟเฟกต์การ์ด */
+
+.card {
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 20px 40px rgba(220, 120, 170, 0.18);
+}

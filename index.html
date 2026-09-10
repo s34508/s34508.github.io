@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rattanaphorn</title>
+    <title>Rattanaphorn Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+    <!-- เมนู -->
     <nav>
 
         <div class="logo">
@@ -19,7 +21,7 @@
         </div>
 
         <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a class="active" href="index.html">หน้าแรก</a></li>
             <li><a href="about.html">เกี่ยวกับฉัน</a></li>
             <li><a href="education.html">การศึกษา</a></li>
             <li><a href="portfolio.html">ผลงาน</a></li>
@@ -29,36 +31,87 @@
     </nav>
 
 
+    <!-- หน้าแรก -->
     <section class="hero">
 
-        <div class="hero-content">
+        <div class="hero-text">
 
-            <div class="profile">
-                👩🏻‍🎓
-            </div>
+            <p class="hello">👋 HELLO, I'M</p>
 
-            <h1>สวัสดีค่ะ 👋</h1>
+            <h1>
+                RATTANAPHORN
+                <span>✦</span>
+            </h1>
 
-            <h2>Rattanaphorn</h2>
+            <h2>Portfolio ของฉัน</h2>
 
-            <p>
-                ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของฉัน ✨
-                <br>
-                มาทำความรู้จักฉันให้มากขึ้นกันเถอะ
+            <p class="description">
+                ยินดีต้อนรับเข้าสู่เว็บไซต์ Portfolio ของฉัน
+                ที่รวบรวมเรื่องราว ประวัติการศึกษา
+                และผลงานต่าง ๆ ของฉันไว้ที่นี่ 💜
             </p>
 
-            <a href="about.html" class="btn">
-                ทำความรู้จักฉัน →
-            </a>
+
+            <!-- ปุ่ม -->
+            <div class="buttons">
+
+                <a href="about.html" class="btn">
+                    ทำความรู้จักฉัน →
+                </a>
+
+                <a href="portfolio.html" class="btn-outline">
+                    ดูผลงาน ✦
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- รูปภาพ -->
+        <div class="hero-image">
+
+            <!-- เปลี่ยนชื่อไฟล์รูปตรงนี้ -->
+            <img src="profile.jpg" alt="Rattanaphorn">
 
         </div>
 
     </section>
 
 
+    <!-- การ์ดด้านล่าง -->
+    <section class="quick-info">
+
+        <div class="info-card">
+            <div class="icon">👩🏻‍🎓</div>
+            <h3>ABOUT ME</h3>
+            <p>มาทำความรู้จักฉัน</p>
+            <a href="about.html">อ่านเพิ่มเติม →</a>
+        </div>
+
+
+        <div class="info-card">
+            <div class="icon">🎓</div>
+            <h3>EDUCATION</h3>
+            <p>ประวัติการศึกษาของฉัน</p>
+            <a href="education.html">ดูเพิ่มเติม →</a>
+        </div>
+
+
+        <div class="info-card">
+            <div class="icon">🏆</div>
+            <h3>PORTFOLIO</h3>
+            <p>รวมผลงานและกิจกรรม</p>
+            <a href="portfolio.html">ดูผลงาน →</a>
+        </div>
+
+    </section>
+
+
     <footer>
-        © 2026 Rattanaphorn Portfolio
+        © 2026 Rattanaphorn Portfolio ✦
     </footer>
 
 </body>
+
 </html>

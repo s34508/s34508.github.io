@@ -3,57 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>เกี่ยวกับฉัน | Rattanaphorn</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar">
-        <div class="logo">🎀 RATTANAPHORN</div>
+    <!-- ของตกแต่งลอย -->
+    <div class="floating bow1">🎀</div>
+    <div class="floating bow2">🎀</div>
+    <div class="floating heart1">💗</div>
+    <div class="floating heart2">💖</div>
+    <div class="floating star1">✨</div>
+    <div class="floating star2">⭐</div>
+
+    <!-- เมนู -->
+    <nav>
+
+        <div class="logo">
+            🎀 RATTANAPHORN
+        </div>
 
         <ul>
-            <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="about.html" class="active">เกี่ยวกับฉัน</a></li>
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="about.html">เกี่ยวกับฉัน</a></li>
             <li><a href="education.html">การศึกษา</a></li>
             <li><a href="portfolio.html">ผลงาน</a></li>
             <li><a href="contact.html">ติดต่อ</a></li>
         </ul>
+
     </nav>
 
 
-    <section class="page-header">
-        <div class="emoji">🎀 🐱 🎀</div>
-        <h1>ABOUT ME</h1>
-        <p>มาทำความรู้จักกับฉันให้มากขึ้นกันเถอะ 💗</p>
+    <!-- ส่วนหัว -->
+
+    <section class="about-hero">
+
+        <div class="about-photo">
+
+            <!-- เปลี่ยนเป็นรูปของเราได้ -->
+            <img src="profile.jpg" alt="My Profile">
+
+        </div>
+
+
+        <div class="about-intro">
+
+            <div class="mini-title">
+                🎀 WELCOME TO MY WORLD 🎀
+            </div>
+
+            <h1>
+                ABOUT ME
+                <span>💖</span>
+            </h1>
+
+            <h2>
+                Hello, I'm <span>Rattanaphorn</span> 🎀
+            </h2>
+
+            <p>
+                สวัสดีค่ะ ยินดีต้อนรับเข้าสู่โลกเล็ก ๆ ของฉัน 💕
+                หน้านี้จะพาทุกคนมาทำความรู้จักกับฉันให้มากขึ้น
+            </p>
+
+            <a href="#about" class="cute-button">
+                มาทำความรู้จักกัน 💗
+            </a>
+
+        </div>
+
     </section>
 
 
-    <main class="about-container">
 
-        <section class="about-profile card">
+    <!-- เนื้อหา -->
 
-            <div class="about-image">
-                <img src="profile.jpg" alt="รูปของฉัน">
+    <main id="about" class="about-container">
+
+
+        <!-- ข้อมูล -->
+
+        <section class="cute-card pink-card">
+
+            <div class="card-icon">
+                👧🏻
             </div>
 
-            <div class="about-text">
+            <h2>เกี่ยวกับฉัน</h2>
 
-                <span class="hello-tag">🎀 HELLO!</span>
-
-                <h2>Hello, I'm Rattanaphorn 🩷</h2>
+            <div class="info-box">
 
                 <p>
-                    สวัสดีค่ะ! ฉันชื่อรัตนาภรณ์ ปัจจุบันกำลังศึกษาอยู่
-                    ในระดับชั้นมัธยมศึกษาปีที่ 6
-                    ฉันเป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ
-                    และสนใจการพัฒนาตัวเองอยู่เสมอ ✨
+                    <span>🎀 ชื่อ:</span>
+                    รัตนาภรณ์
                 </p>
 
-                <div class="tags">
-                    <span class="tag">👩 รัตนาภรณ์</span>
-                    <span class="tag">🎓 ม.6</span>
-                    <span class="tag">🇹🇭 Thailand</span>
+                <p>
+                    <span>🎂 วันเกิด:</span>
+                    13 สิงหาคม 2551
+                </p>
+
+                <p>
+                    <span>🎓 ระดับการศึกษา:</span>
+                    มัธยมศึกษาปีที่ 6
+                </p>
+
+                <p>
+                    <span>🏫 ประเทศ:</span>
+                    ประเทศไทย
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- สิ่งที่ชอบ -->
+
+        <section class="cute-card purple-card">
+
+            <div class="card-icon">
+                💜
+            </div>
+
+            <h2>สิ่งที่ฉันชอบ</h2>
+
+
+            <div class="hobby-grid">
+
+                <div class="hobby">
+                    🎨
+                    <p>ความคิดสร้างสรรค์</p>
+                </div>
+
+                <div class="hobby">
+                    🌍
+                    <p>การเรียนรู้สิ่งใหม่</p>
+                </div>
+
+                <div class="hobby">
+                    🗣️
+                    <p>ภาษาและการสื่อสาร</p>
+                </div>
+
+                <div class="hobby">
+                    💻
+                    <p>เทคโนโลยี</p>
                 </div>
 
             </div>
@@ -61,83 +160,61 @@
         </section>
 
 
-        <h2 class="section-title">💗 สิ่งที่ฉันชอบ 💗</h2>
 
-        <section class="favorite-grid">
+        <!-- เป้าหมาย -->
 
-            <div class="favorite-card card">
-                <div class="big-icon">📚</div>
-                <h3>การเรียนรู้</h3>
-                <p>ชอบเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ</p>
+        <section class="cute-card yellow-card">
+
+            <div class="card-icon">
+                🎯
             </div>
 
-            <div class="favorite-card card">
-                <div class="big-icon">🗣️</div>
-                <h3>ภาษา</h3>
-                <p>สนใจภาษาและการสื่อสาร</p>
-            </div>
+            <h2>เป้าหมายของฉัน</h2>
 
-            <div class="favorite-card card">
-                <div class="big-icon">🎨</div>
-                <h3>ความคิดสร้างสรรค์</h3>
-                <p>ชอบออกแบบและสร้างสรรค์ผลงาน</p>
-            </div>
+            <p class="goal-text">
 
-            <div class="favorite-card card">
-                <div class="big-icon">🌍</div>
-                <h3>โลกกว้าง</h3>
-                <p>ชอบเรียนรู้สิ่งต่าง ๆ รอบตัว</p>
-            </div>
+                ฉันต้องการพัฒนาความรู้และความสามารถของตัวเองอยู่เสมอ 💫
+                เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อในระดับมหาวิทยาลัย
+                และก้าวไปสู่อนาคตที่ตัวเองตั้งใจไว้ 🌈
 
-        </section>
-
-
-        <section class="goal-card">
-
-            <div class="goal-icon">🎯</div>
-
-            <div>
-                <h2>เป้าหมายของฉัน</h2>
-
-                <p>
-                    ฉันต้องการพัฒนาความรู้และความสามารถของตัวเอง
-                    เพื่อเตรียมความพร้อมสำหรับการศึกษาต่อ
-                    และก้าวไปสู่อนาคตที่ฉันตั้งใจไว้ ✨
-                </p>
-            </div>
-
-        </section>
-
-
-        <section class="motto-card card">
-
-            <div class="big-icon">💕</div>
-
-            <h2>My Motto</h2>
-
-            <p class="quote">
-                “Believe in yourself and never stop learning.”
             </p>
 
-            <h3>
-                ✨ เชื่อมั่นในตัวเอง และอย่าหยุดเรียนรู้ ✨
-            </h3>
+
+            <div class="quote-box">
+
+                <div class="quote-icon">💖</div>
+
+                <p>
+                    "Believe in yourself and never stop learning."
+                </p>
+
+                <span>
+                    เชื่อมั่นในตัวเอง และอย่าหยุดเรียนรู้ ✨
+                </span>
+
+            </div>
 
         </section>
 
-
-        <div class="next-page">
-            <a href="education.html" class="btn">
-                ไปดูการศึกษาของฉัน 🎓 →
-            </a>
-        </div>
 
     </main>
 
 
+
+    <!-- Footer -->
+
     <footer>
-        <p>🎀 Made with love by Rattanaphorn 🩷</p>
+
+        <div class="footer-hearts">
+            💗 🎀 💖 🎀 💗
+        </div>
+
+        <p>
+            Made with 💖 by Rattanaphorn
+        </p>
+
     </footer>
+
 
 </body>
 </html>

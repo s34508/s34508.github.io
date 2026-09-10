@@ -979,3 +979,66 @@ footer{
         font-size: 25px !important;
     }
 }
+/* ===== FORCE CENTER HOME PAGE ===== */
+
+body.home-page {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* บังคับ main ให้อยู่กลาง */
+body.home-page main.hero {
+    width: 100% !important;
+    max-width: none !important;
+
+    min-height: calc(100vh - 90px) !important;
+
+    margin: 0 auto !important;
+    padding: 60px 20px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    text-align: center !important;
+
+    position: relative;
+}
+
+/* บังคับทุกส่วนข้างในให้อยู่กลาง */
+body.home-page .profile-wrapper,
+body.home-page .cute-icons,
+body.home-page .welcome-text,
+body.home-page .hero h1,
+body.home-page .hero h2,
+body.home-page .intro,
+body.home-page .button-group,
+body.home-page .mini-info {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* ปุ่ม */
+body.home-page .button-group {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* การ์ดข้อมูล */
+body.home-page .mini-info {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* รูป */
+body.home-page .profile-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}

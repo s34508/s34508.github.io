@@ -1053,42 +1053,81 @@ body.home-page .profile-wrapper {
     object-fit: cover;
     display: block;
 }
-/* ================= iPad / หน้าจอแนวตั้ง ================= */
+//* ================= iPad แนวตั้ง ================= */
 
-@media (max-width: 900px){
+@media (min-width: 701px) and (max-width: 1100px){
 
     nav{
+        display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+
+        padding: 20px 15px 25px;
+
         gap: 15px;
-        padding: 18px 15px;
     }
 
+    /* โลโก้อยู่ตรงกลางด้านบน */
     .logo{
-        font-size: 22px;
+        font-size: 25px;
         text-align: center;
+        white-space: nowrap;
     }
 
+    /* เมนูอยู่แถวเดียว */
     nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
         width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-        justify-items: center;
+        gap: 10px;
+
+        flex-wrap: nowrap;
     }
 
     nav ul li{
-        width: 100%;
-        text-align: center;
+        flex-shrink: 0;
     }
 
     nav ul li a{
         display: block;
+
         font-size: 15px;
-        padding: 8px 5px;
+
+        padding: 9px 10px;
+
         white-space: nowrap;
     }
 
 }
 
 
+/* ================= มือถือ ================= */
+
+@media (max-width: 700px){
+
+    nav{
+        padding: 15px 10px;
+    }
+
+    .logo{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    nav ul li a{
+        font-size: 13px;
+        padding: 7px 6px;
+    }
+
+}

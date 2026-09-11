@@ -2123,13 +2123,14 @@ nav ul li a.active {
 
 }
 /* ========================================
-   🎀 CUTE BIG PROFILE - เพิ่มต่อท้าย CSS
+   🎀 CUTE CARTOON PHOTO FRAME
 ======================================== */
 
 .profile-wrapper {
     position: relative;
     width: 420px;
-    height: 420px;
+    height: 400px;
+
     margin: 20px auto 40px;
 
     display: flex;
@@ -2143,50 +2144,52 @@ nav ul li a.active {
 .profile-glow {
     position: absolute;
 
-    width: 340px;
-    height: 340px;
-
-    border-radius: 50%;
+    width: 330px;
+    height: 330px;
 
     background: linear-gradient(
         135deg,
-        #ffc1dc,
-        #e2c9ff,
-        #fff0a8,
-        #ffb8d2
+        #ffc6df,
+        #e2ccff,
+        #fff0a8
     );
+
+    border-radius: 40%;
 
     filter: blur(35px);
 
-    opacity: 0.75;
+    opacity: 0.7;
 
     animation: glowPulse 3s ease-in-out infinite;
 }
 
 
-/* 🎀 กรอบรูปใหญ่ */
+/* 🖼️ กรอบรูป */
 
 .profile {
     position: relative;
 
-    width: 310px;
-    height: 310px;
+    width: 300px;
+    height: 330px;
 
     padding: 14px;
 
-    border-radius: 50%;
-
     background: linear-gradient(
         135deg,
-        #ff9fc7,
-        #d9b8ff,
-        #fff0a6,
-        #ffc2da
+        #ffb6d5,
+        #ffd1e5,
+        #d9c5ff,
+        #fff0a8
     );
 
+    /* ทำให้กรอบไม่เป็นวงกลม */
+    border-radius: 45px 45px 70px 70px;
+
+    border: 7px solid white;
+
     box-shadow:
-        0 15px 45px rgba(255, 128, 180, 0.35),
-        0 0 0 8px white;
+        0 18px 40px rgba(255, 130, 185, 0.35),
+        8px 8px 0 #f3c6df;
 
     z-index: 2;
 
@@ -2194,7 +2197,7 @@ nav ul li a.active {
 }
 
 
-/* 📸 รูปโปรไฟล์ */
+/* 📸 รูปข้างใน */
 
 .profile img {
     width: 100%;
@@ -2202,31 +2205,33 @@ nav ul li a.active {
 
     object-fit: cover;
 
-    border-radius: 50%;
-
-    border: 5px solid white;
+    border-radius: 28px 28px 55px 55px;
 
     display: block;
+
+    border: 4px solid white;
 }
 
 
-/* 🎀 โบว์ด้านบน */
+/* 🎀 โบว์ใหญ่ด้านบน */
 
 .profile::before {
     content: "🎀";
 
     position: absolute;
 
-    top: -50px;
+    font-size: 85px;
+
+    top: -65px;
     left: 50%;
 
     transform: translateX(-50%);
 
-    font-size: 70px;
-
     z-index: 10;
 
-    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.15));
+    filter: drop-shadow(
+        0 6px 4px rgba(0,0,0,0.15)
+    );
 
     animation: bowBounce 2s ease-in-out infinite;
 }
@@ -2235,7 +2240,7 @@ nav ul li a.active {
 /* 💖 ของตกแต่งด้านล่าง */
 
 .profile::after {
-    content: "💖  🌸  ✨";
+    content: "💖 ✨ 🌸";
 
     position: absolute;
 
@@ -2248,56 +2253,47 @@ nav ul li a.active {
 
     white-space: nowrap;
 
-    z-index: 10;
-
     animation: decoFloat 3s ease-in-out infinite;
 }
 
 
-/* ========================================
-   ✨ ANIMATIONS
-======================================== */
+/* ✨ รูปลอย */
 
 @keyframes profileFloat {
 
-    0% {
-        transform: translateY(0px);
+    0%, 100% {
+        transform: translateY(0) rotate(-2deg);
     }
 
     50% {
-        transform: translateY(-15px);
-    }
-
-    100% {
-        transform: translateY(0px);
+        transform: translateY(-15px) rotate(2deg);
     }
 
 }
 
+
+/* 💡 แสงขยาย */
 
 @keyframes glowPulse {
 
-    0% {
-        transform: scale(0.95);
-        opacity: 0.6;
+    0%, 100% {
+        transform: scale(0.9);
+        opacity: 0.5;
     }
 
     50% {
-        transform: scale(1.08);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(0.95);
-        opacity: 0.6;
+        transform: scale(1.1);
+        opacity: 0.9;
     }
 
 }
 
 
+/* 🎀 โบว์เด้ง */
+
 @keyframes bowBounce {
 
-    0% {
+    0%, 100% {
         transform: translateX(-50%) translateY(0);
     }
 
@@ -2305,25 +2301,19 @@ nav ul li a.active {
         transform: translateX(-50%) translateY(-10px);
     }
 
-    100% {
-        transform: translateX(-50%) translateY(0);
-    }
-
 }
 
 
+/* 🌸 ของตกแต่งลอย */
+
 @keyframes decoFloat {
 
-    0% {
+    0%, 100% {
         transform: translateX(-50%) translateY(0);
     }
 
     50% {
         transform: translateX(-50%) translateY(8px);
-    }
-
-    100% {
-        transform: translateX(-50%) translateY(0);
     }
 
 }

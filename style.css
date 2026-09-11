@@ -1053,3 +1053,66 @@ body.home-page .profile-wrapper {
     object-fit: cover;
     display: block;
 }
+/* ================= iPad / หน้าจอแนวตั้ง ================= */
+
+@media (max-width: 900px){
+
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 18px 15px;
+    }
+
+    .logo{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    nav ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        justify-items: center;
+    }
+
+    nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a{
+        display: block;
+        font-size: 15px;
+        padding: 8px 5px;
+        white-space: nowrap;
+    }
+
+}
+
+
+/* ================= มือถือ ================= */
+
+@media (max-width: 600px){
+
+    nav{
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+
+    nav ul{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    nav ul li a{
+        font-size: 14px;
+        padding: 7px 3px;
+    }
+
+}

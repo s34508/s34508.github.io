@@ -2,20 +2,25 @@
 <html lang="th">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>เกี่ยวกับฉัน | Rattanaphorn</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
 
+<body class="about-page">
 
-<body>
+    <!-- ================= ของตกแต่งลอย ================= -->
+
+    <div class="about-float about-float1">🎀</div>
+    <div class="about-float about-float2">💗</div>
+    <div class="about-float about-float3">✨</div>
+    <div class="about-float about-float4">🌸</div>
+    <div class="about-float about-float5">💜</div>
+    <div class="about-float about-float6">⭐</div>
+
 
     <!-- ================= NAV ================= -->
 
@@ -34,7 +39,7 @@
             </li>
 
             <li>
-                <a href="about.html">
+                <a href="about.html" class="active">
                     💗 เกี่ยวกับฉัน
                 </a>
             </li>
@@ -62,168 +67,226 @@
     </nav>
 
 
-    <!-- ================= FLOATING EMOJI ================= -->
+    <!-- ================= MAIN ================= -->
 
-    <div class="float-item item1">🎀</div>
-    <div class="float-item item2">💖</div>
-    <div class="float-item item3">✨</div>
-    <div class="float-item item4">🌸</div>
-    <div class="float-item item5">⭐</div>
-    <div class="float-item item6">💜</div>
-    <div class="float-item item7">🎀</div>
-    <div class="float-item item8">🩷</div>
+    <main class="about-container">
 
 
-    <!-- ================= ABOUT ================= -->
+        <!-- หัวข้อ -->
 
-    <main class="page">
+        <div class="about-heading">
 
-        <div class="main-card">
-
-            <!-- หัวข้อ -->
-
-            <p class="welcome-text">
+            <p class="about-small-title">
                 ✨ GET TO KNOW ME ✨
             </p>
 
-
-            <h1 class="page-title">
-                เกี่ยวกับฉัน 💗
+            <h1>
+                เกี่ยวกับฉัน <span>💗</span>
             </h1>
 
-
-            <p class="page-subtitle">
+            <p class="about-subtitle">
                 มาทำความรู้จัก Rattanaphorn กันมากขึ้นนะคะ 🎀
             </p>
 
-
-            <!-- ================= ABOUT CONTENT ================= -->
-
-            <div class="about-content">
+        </div>
 
 
-                <!-- รูป -->
 
-                <div class="about-photo">
+        <!-- ================= PROFILE ================= -->
 
-                    <div class="profile">
+        <section class="about-profile">
 
-                        <img
-                            src="S__15089671.jpg"
-                            alt="Rattanaphorn"
-                        >
 
-                    </div>
+            <!-- รูป -->
 
+            <div class="about-photo">
+
+                <div class="photo-decoration">
+                    🌸
                 </div>
 
+                <img
+                    src="S__15089671.jpg"
+                    alt="รูปของ Rattanaphorn"
+                >
 
-                <!-- ข้อมูล -->
-
-                <div class="about-text">
-
-                    <h2>
-                        สวัสดีค่ะ 👋
-                    </h2>
-
-                    <p>
-                        ฉันชื่อ <strong>Rattanaphorn</strong>
-                        เป็นนักเรียนที่ชอบเรียนรู้สิ่งใหม่ ๆ
-                        และสนใจการพัฒนาตัวเองอยู่เสมอค่ะ 💗
-                    </p>
-
-                    <p>
-                        ฉันเป็นคนที่ชอบความคิดสร้างสรรค์
-                        ชอบทำกิจกรรม และสนใจเรื่องการเรียน
-                        รวมถึงการวางแผนอนาคตของตัวเอง 🎓✨
-                    </p>
-
-                    <p>
-                        เว็บไซต์ Portfolio นี้จัดทำขึ้นเพื่อรวบรวม
-                        ประวัติ การศึกษา ผลงาน และสิ่งที่ฉันสนใจ
-                        เพื่อให้ทุกคนได้รู้จักตัวฉันมากขึ้นค่ะ 🌸
-                    </p>
-
+                <div class="photo-heart">
+                    💗
                 </div>
 
             </div>
 
 
-            <!-- ================= INFORMATION ================= -->
 
-            <div class="about-cards">
+            <!-- ข้อความ -->
+
+            <div class="about-text">
+
+                <h2>
+                    สวัสดีค่ะ 👋
+                </h2>
+
+                <p>
+                    ฉันชื่อ <strong>Rattanaphorn</strong>
+                    เป็นนักเรียนที่ชอบเรียนรู้สิ่งใหม่ ๆ
+                    และสนใจการพัฒนาตัวเองอยู่เสมอค่ะ 💗
+                </p>
+
+                <p>
+                    ฉันเป็นคนที่ชอบความคิดสร้างสรรค์
+                    ชอบทำกิจกรรม และสนใจเรื่องการเรียน
+                    รวมถึงการวางแผนอนาคตของตัวเอง 🎓✨
+                </p>
+
+                <p>
+                    เว็บไซต์ Portfolio นี้จัดทำขึ้นเพื่อรวบรวม
+                    ประวัติ การศึกษา ผลงาน และสิ่งที่ฉันสนใจ
+                    เพื่อให้ทุกคนได้รู้จักตัวฉันมากขึ้นค่ะ 🌸
+                </p>
+
+            </div>
+
+        </section>
 
 
-                <div class="info-card">
 
-                    <span>🎀</span>
+        <!-- ================= INFORMATION ================= -->
 
-                    <h3>
-                        บุคลิก
-                    </h3>
+        <section class="about-cards">
 
-                    <p>
-                        ร่าเริง เป็นมิตร
-                        และชอบเรียนรู้สิ่งใหม่
-                    </p>
 
+            <div class="about-card">
+
+                <div class="about-card-icon">
+                    🎀
                 </div>
 
+                <h2>
+                    บุคลิก
+                </h2>
 
-                <div class="info-card">
-
-                    <span>💡</span>
-
-                    <h3>
-                        ความสนใจ
-                    </h3>
-
-                    <p>
-                        การเรียน ภาษา
-                        และความคิดสร้างสรรค์
-                    </p>
-
-                </div>
-
-
-                <div class="info-card">
-
-                    <span>🌟</span>
-
-                    <h3>
-                        เป้าหมาย
-                    </h3>
-
-                    <p>
-                        พัฒนาตัวเองและ
-                        ทำตามความฝันให้สำเร็จ
-                    </p>
-
-                </div>
-
+                <p>
+                    ร่าเริง เป็นมิตร และชอบเรียนรู้สิ่งใหม่
+                </p>
 
             </div>
 
 
-            <!-- ปุ่มกลับหน้าแรก -->
 
-            <a href="index.html" class="btn">
+            <div class="about-card">
 
-                🏠 กลับหน้าแรก
+                <div class="about-card-icon">
+                    💡
+                </div>
 
+                <h2>
+                    ความสนใจ
+                </h2>
+
+                <p>
+                    การเรียน ภาษา และความคิดสร้างสรรค์
+                </p>
+
+            </div>
+
+
+
+            <div class="about-card">
+
+                <div class="about-card-icon">
+                    🌟
+                </div>
+
+                <h2>
+                    เป้าหมาย
+                </h2>
+
+                <p>
+                    พัฒนาตัวเองและสร้างอนาคตที่ดีให้กับตัวเอง
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= MY WORLD ================= -->
+
+        <section class="about-world">
+
+            <div class="world-title">
+                ✨ MY LITTLE WORLD ✨
+            </div>
+
+            <h2>
+                สิ่งที่ฉันชอบ 💕
+            </h2>
+
+            <div class="interest-list">
+
+                <div class="interest-item">
+                    📚
+                    <span>การเรียนรู้</span>
+                </div>
+
+                <div class="interest-item">
+                    🌸
+                    <span>ความคิดสร้างสรรค์</span>
+                </div>
+
+                <div class="interest-item">
+                    🗣️
+                    <span>ภาษา</span>
+                </div>
+
+                <div class="interest-item">
+                    🎨
+                    <span>การออกแบบ</span>
+                </div>
+
+                <div class="interest-item">
+                    ✨
+                    <span>การพัฒนาตัวเอง</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= BUTTON ================= -->
+
+        <div class="about-buttons">
+
+            <a href="education.html" class="about-btn purple">
+                🎓 ดูการศึกษา
+                →
             </a>
 
+            <a href="portfolio.html" class="about-btn yellow">
+                🌟 ดูผลงาน
+                →
+            </a>
 
         </div>
 
+
     </main>
+
 
 
     <!-- ================= FOOTER ================= -->
 
     <footer>
 
-        🎀 Made with love by Rattanaphorn 💖
+        <span>🎀</span>
+
+        Made with love by Rattanaphorn
+
+        <span>💖</span>
 
     </footer>
 

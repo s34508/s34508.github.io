@@ -2121,198 +2121,211 @@ nav ul li a.active {
             0 5px 15px rgba(190,140,190,0.18);
     }
 
-}/* ========================================
-   🎀 CUTE CARTOON PHOTO FRAME
-======================================== */
+}
+/* =========================================
+   ✨ PAGE OPENING ANIMATIONS
+========================================= */
 
+/* เริ่มต้นซ่อน element ไว้ก่อน */
+.hero > *,
+.about-container > *,
+.about-content > *,
+.info-card,
+.section-title {
+    opacity: 0;
+}
+
+
+/* =========================
+   🏠 หน้าแรก
+========================= */
+
+/* รูปสไลด์ลงมา + เด้ง */
 .profile-wrapper {
-    position: relative;
-    width: 420px;
-    height: 400px;
+    animation: profileEnter 1s ease-out forwards;
+}
 
-    margin: 20px auto 40px;
+/* ข้อความ Welcome */
+.hero .welcome-text {
+    animation: slideUpBounce 0.8s ease-out 0.3s forwards;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* หัวข้อ สวัสดีค่ะ */
+.hero h1 {
+    animation: slideUpBounce 0.9s ease-out 0.5s forwards;
+}
+
+/* ชื่อ */
+.hero h2 {
+    animation: slideUpBounce 0.9s ease-out 0.7s forwards;
+}
+
+/* คำอธิบาย */
+.hero p {
+    animation: fadeSlideUp 0.8s ease-out 0.9s forwards;
+}
+
+/* ปุ่ม */
+.hero .hero-buttons,
+.hero .button-group {
+    animation: fadeSlideUp 0.8s ease-out 1.1s forwards;
 }
 
 
-/* ✨ แสงฟุ้งด้านหลัง */
+/* =========================
+   💖 หน้า ABOUT
+========================= */
 
-.profile-glow {
-    position: absolute;
+/* หัวข้อ About */
+.about-title,
+.about-hero h1 {
+    animation: slideFromLeft 0.8s ease-out 0.2s forwards;
+}
 
-    width: 330px;
-    height: 330px;
+/* คำอธิบาย */
+.about-subtitle,
+.about-hero p {
+    animation: fadeSlideUp 0.8s ease-out 0.4s forwards;
+}
 
-    background: linear-gradient(
-        135deg,
-        #ffc6df,
-        #e2ccff,
-        #fff0a8
-    );
+/* รูป About */
+.about-image,
+.about-photo {
+    animation: slideFromRight 1s ease-out 0.5s forwards;
+}
 
-    border-radius: 40%;
-
-    filter: blur(35px);
-
-    opacity: 0.7;
-
-    animation: glowPulse 3s ease-in-out infinite;
+/* การ์ดข้อมูล */
+.info-card {
+    animation: cardPop 0.7s ease-out forwards;
 }
 
 
-/* 🖼️ กรอบรูป */
+/* ทำให้การ์ดเด้งเข้าทีละใบ */
+.info-card:nth-child(1) {
+    animation-delay: 0.5s;
+}
 
-.profile {
-    position: relative;
+.info-card:nth-child(2) {
+    animation-delay: 0.7s;
+}
 
-    width: 300px;
-    height: 330px;
+.info-card:nth-child(3) {
+    animation-delay: 0.9s;
+}
 
-    padding: 14px;
-
-    background: linear-gradient(
-        135deg,
-        #ffb6d5,
-        #ffd1e5,
-        #d9c5ff,
-        #fff0a8
-    );
-
-    /* ทำให้กรอบไม่เป็นวงกลม */
-    border-radius: 45px 45px 70px 70px;
-
-    border: 7px solid white;
-
-    box-shadow:
-        0 18px 40px rgba(255, 130, 185, 0.35),
-        8px 8px 0 #f3c6df;
-
-    z-index: 2;
-
-    animation: profileFloat 3s ease-in-out infinite;
+.info-card:nth-child(4) {
+    animation-delay: 1.1s;
 }
 
 
-/* 📸 รูปข้างใน */
+/* =========================================
+   🎀 KEYFRAMES
+========================================= */
 
-.profile img {
-    width: 100%;
-    height: 100%;
+/* รูปเด้งลงมา */
+@keyframes profileEnter {
 
-    object-fit: cover;
-
-    border-radius: 28px 28px 55px 55px;
-
-    display: block;
-
-    border: 4px solid white;
-}
-
-
-/* 🎀 โบว์ใหญ่ด้านบน */
-
-.profile::before {
-    content: "🎀";
-
-    position: absolute;
-
-    font-size: 85px;
-
-    top: -65px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    z-index: 10;
-
-    filter: drop-shadow(
-        0 6px 4px rgba(0,0,0,0.15)
-    );
-
-    animation: bowBounce 2s ease-in-out infinite;
-}
-
-
-/* 💖 ของตกแต่งด้านล่าง */
-
-.profile::after {
-    content: "💖 ✨ 🌸";
-
-    position: absolute;
-
-    bottom: -45px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    font-size: 28px;
-
-    white-space: nowrap;
-
-    animation: decoFloat 3s ease-in-out infinite;
-}
-
-
-/* ✨ รูปลอย */
-
-@keyframes profileFloat {
-
-    0%, 100% {
-        transform: translateY(0) rotate(-2deg);
+    0% {
+        opacity: 0;
+        transform: translateY(-80px) scale(0.7);
     }
 
-    50% {
-        transform: translateY(-15px) rotate(2deg);
+    60% {
+        opacity: 1;
+        transform: translateY(15px) scale(1.08);
     }
 
+    80% {
+        transform: translateY(-8px) scale(0.97);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 
-/* 💡 แสงขยาย */
+/* ข้อความเด้งขึ้น */
+@keyframes slideUpBounce {
 
-@keyframes glowPulse {
-
-    0%, 100% {
-        transform: scale(0.9);
-        opacity: 0.5;
+    0% {
+        opacity: 0;
+        transform: translateY(70px) scale(0.9);
     }
 
-    50% {
-        transform: scale(1.1);
-        opacity: 0.9;
+    70% {
+        opacity: 1;
+        transform: translateY(-8px) scale(1.03);
     }
 
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
 }
 
 
-/* 🎀 โบว์เด้ง */
+/* ค่อย ๆ เลื่อนขึ้น */
+@keyframes fadeSlideUp {
 
-@keyframes bowBounce {
-
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
+    from {
+        opacity: 0;
+        transform: translateY(40px);
     }
 
-    50% {
-        transform: translateX(-50%) translateY(-10px);
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
-
 }
 
 
-/* 🌸 ของตกแต่งลอย */
+/* เลื่อนเข้าจากซ้าย */
+@keyframes slideFromLeft {
 
-@keyframes decoFloat {
-
-    0%, 100% {
-        transform: translateX(-50%) translateY(0);
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
     }
 
-    50% {
-        transform: translateX(-50%) translateY(8px);
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* เลื่อนเข้าจากขวา */
+@keyframes slideFromRight {
+
+    from {
+        opacity: 0;
+        transform: translateX(100px);
     }
 
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+/* การ์ดเด้ง */
+@keyframes cardPop {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.6) translateY(50px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.05) translateY(-5px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
 }

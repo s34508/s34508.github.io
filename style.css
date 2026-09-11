@@ -2123,209 +2123,148 @@ nav ul li a.active {
 
 }
 /* =========================================
-   ✨ PAGE OPENING ANIMATIONS
+   🎀 HERO OPENING ANIMATION
 ========================================= */
 
-/* เริ่มต้นซ่อน element ไว้ก่อน */
-.hero > *,
-.about-container > *,
-.about-content > *,
-.info-card,
-.section-title {
-    opacity: 0;
-}
-
-
-/* =========================
-   🏠 หน้าแรก
-========================= */
-
-/* รูปสไลด์ลงมา + เด้ง */
+/* รูปโปรไฟล์เด้งเข้ามา */
 .profile-wrapper {
-    animation: profileEnter 1s ease-out forwards;
-}
-
-/* ข้อความ Welcome */
-.hero .welcome-text {
-    animation: slideUpBounce 0.8s ease-out 0.3s forwards;
-}
-
-/* หัวข้อ สวัสดีค่ะ */
-.hero h1 {
-    animation: slideUpBounce 0.9s ease-out 0.5s forwards;
-}
-
-/* ชื่อ */
-.hero h2 {
-    animation: slideUpBounce 0.9s ease-out 0.7s forwards;
-}
-
-/* คำอธิบาย */
-.hero p {
-    animation: fadeSlideUp 0.8s ease-out 0.9s forwards;
-}
-
-/* ปุ่ม */
-.hero .hero-buttons,
-.hero .button-group {
-    animation: fadeSlideUp 0.8s ease-out 1.1s forwards;
+    opacity: 0;
+    animation: profileEnter 1.2s ease-out forwards;
 }
 
 
-/* =========================
-   💖 หน้า ABOUT
-========================= */
-
-/* หัวข้อ About */
-.about-title,
-.about-hero h1 {
-    animation: slideFromLeft 0.8s ease-out 0.2s forwards;
-}
-
-/* คำอธิบาย */
-.about-subtitle,
-.about-hero p {
-    animation: fadeSlideUp 0.8s ease-out 0.4s forwards;
-}
-
-/* รูป About */
-.about-image,
-.about-photo {
-    animation: slideFromRight 1s ease-out 0.5s forwards;
-}
-
-/* การ์ดข้อมูล */
-.info-card {
-    animation: cardPop 0.7s ease-out forwards;
+/* รูปด้านในค่อย ๆ ปรากฏ */
+.profile {
+    animation: profilePop 1s ease-out 0.3s both;
 }
 
 
-/* ทำให้การ์ดเด้งเข้าทีละใบ */
-.info-card:nth-child(1) {
-    animation-delay: 0.5s;
+/* แสงด้านหลังรูป */
+.profile-glow {
+    opacity: 0;
+    animation: glowEnter 1.5s ease-out 0.2s forwards;
 }
 
-.info-card:nth-child(2) {
-    animation-delay: 0.7s;
+
+/* ===============================
+   🎀 FLOAT ITEMS เข้ามาทีละอัน
+================================ */
+
+.float-item {
+    opacity: 0;
+    animation: floatEnter 0.8s ease-out forwards;
 }
 
-.info-card:nth-child(3) {
-    animation-delay: 0.9s;
+.item1 {
+    animation-delay: 0.2s;
 }
 
-.info-card:nth-child(4) {
-    animation-delay: 1.1s;
+.item2 {
+    animation-delay: 0.4s;
+}
+
+.item3 {
+    animation-delay: 0.6s;
+}
+
+.item4 {
+    animation-delay: 0.8s;
+}
+
+.item5 {
+    animation-delay: 1s;
+}
+
+.item6 {
+    animation-delay: 1.2s;
+}
+
+.item7 {
+    animation-delay: 1.4s;
+}
+
+.item8 {
+    animation-delay: 1.6s;
 }
 
 
 /* =========================================
-   🎀 KEYFRAMES
+   ✨ KEYFRAMES
 ========================================= */
 
-/* รูปเด้งลงมา */
+/* รูปสไลด์ลงมา + เด้ง */
 @keyframes profileEnter {
 
     0% {
         opacity: 0;
-        transform: translateY(-80px) scale(0.7);
+        transform: translateY(-100px) scale(0.6) rotate(-10deg);
     }
 
     60% {
         opacity: 1;
-        transform: translateY(15px) scale(1.08);
+        transform: translateY(15px) scale(1.08) rotate(3deg);
     }
 
     80% {
-        transform: translateY(-8px) scale(0.97);
+        transform: translateY(-8px) scale(0.97) rotate(-1deg);
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1) rotate(0);
     }
+
 }
 
 
-/* ข้อความเด้งขึ้น */
-@keyframes slideUpBounce {
+/* 💖 กรอบรูป Pop */
+@keyframes profilePop {
 
     0% {
         opacity: 0;
-        transform: translateY(70px) scale(0.9);
+        transform: scale(0.5);
     }
 
     70% {
         opacity: 1;
-        transform: translateY(-8px) scale(1.03);
+        transform: scale(1.08);
     }
 
     100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* 🌸 แสงด้านหลัง */
+@keyframes glowEnter {
+
+    from {
+        opacity: 0;
+        transform: scale(0.4);
+    }
+
+    to {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+}
+
+
+/* 🎀 ของตกแต่งสไลด์เข้ามา */
+@keyframes floatEnter {
+
+    from {
+        opacity: 0;
+        transform: translateY(-40px) scale(0.5);
+    }
+
+    to {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
-}
 
-
-/* ค่อย ๆ เลื่อนขึ้น */
-@keyframes fadeSlideUp {
-
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/* เลื่อนเข้าจากซ้าย */
-@keyframes slideFromLeft {
-
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-/* เลื่อนเข้าจากขวา */
-@keyframes slideFromRight {
-
-    from {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-
-/* การ์ดเด้ง */
-@keyframes cardPop {
-
-    0% {
-        opacity: 0;
-        transform: scale(0.6) translateY(50px);
-    }
-
-    70% {
-        opacity: 1;
-        transform: scale(1.05) translateY(-5px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-    }
 }

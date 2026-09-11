@@ -1042,3 +1042,14 @@ body.home-page .profile-wrapper {
     justify-content: center !important;
     align-items: center !important;
 }
+.work-image {
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

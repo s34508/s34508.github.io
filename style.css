@@ -2268,3 +2268,18 @@ nav ul li a.active {
     }
 
 }
+/* ===== FIX เนื้อหาหน้าหลักไม่แสดง ===== */
+
+.hero {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.profile-wrapper,
+.hero-content,
+.hero-text {
+    opacity: 1;
+    visibility: visible;
+}
+
